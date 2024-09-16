@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0978e0; /* Fundo claro para contraste */
+}
+
+nav {
+    display: flex; /* Definindo nav como flex container */
+    justify-content: space-between; /* Distribui espaço entre os elementos */
+    align-items: center; /* Centraliza os itens verticalmente */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 200px; /* Aumentado para 200px */
+    background-color: #009639; /* Verde */
+    color: #fff;
+    padding: 0 40px; /* Aumentado para 40px nas laterais */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o nav fique acima de outros elementos */
+}
+
+nav #logo {
+    margin: 0;
+}
+
+nav #logo img {
+    height: 100px; /* Aumentado para 100px */
+}
+
+nav h1 {
+    font-size: 36px; /* Aumentado para 36px */
+    font-family: Montserrat, sans-serif;
+    margin-left: 40px; /* Aumentado para 40px */
+}
+
+nav ul {
+    display: flex; /* Mantendo Flexbox no menu */
+    align-items: center; /* Alinha os itens do menu verticalmente */
+    margin: 0; /* Remove a margem padrão */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 30px; /* Aumentado para 30px */
+    font-size: 20px; /* Aumentado para 20px */
+}
+
+nav ul li a {
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    padding: 15px; /* Aumentado para 15px */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+nav ul li a:hover {
+    background-color: #007a33; /* Verde escuro no hover */
+    border-radius: 4px; /* Bordas arredondadas no hover */
+}
+
+#content {
+    max-width: 1200px;
+    margin: 220px auto 40px auto; /* Margem superior ajustada para o novo tamanho do nav fixo */
+    padding: 20px;
+    display: flex; /* Flexbox no container geral para alinhar imagem e texto */
+    justify-content: flex-start; /* Alinha os itens no início */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#content img {
+    max-width: 60%; /* Aumentado para 60% */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#content h2 {
+    font-size: 36px; /* Aumentado para 36px */
+    font-family: Montserrat, sans-serif;
+    color: #fff; /* Verde */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+#content p {
+    font-size: 20px; /* Aumentado para 20px */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Cor escura para contraste com o fundo claro */
+    line-height: 1.6;
+}
+
+.image-text-container {
+    display: flex; /* Ativa o flexbox no container da imagem e do texto */
+    justify-content: space-between; /* Garante que a imagem e o texto fiquem distantes */
+    width: 100%; /* Garante que o container ocupe toda a largura */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.text-container {
+    max-width: 50%; /* Define o texto com 50% da largura */
+    padding-left: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.text-container h2 {
+    font-size: 36px; /* Aumentado para 36px */
+    font-family: Montserrat, sans-serif;
+    color: #009639; /* Verde */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+.text-container p {
+    font-size: 20px; /* Aumentado para 20px */
+    font-family: Arial, sans-serif;
+    color: #333; /* Cor escura para contraste com o fundo claro */
+    line-height: 1.6;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7d115; /* Amarelo */
+    color: #333;
+    text-align: center;
+    padding: 20px 0; /* Aumentado para 20px */
+    height: 120px; /* Aumentado para 120px */
+}
+
+footer p {
+    margin: 0;
+}
